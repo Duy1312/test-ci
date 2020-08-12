@@ -1,0 +1,14 @@
+function findOppositeNumber(n, firstNum) {
+if( 4 <= n <= 20 && 0 <= firstNum <= (n – 1) && n % 2 == 0 ) {
+ var half= n/2
+
+if(firstNum < half){
+return firstNum + half;
+}
+else
+{
+	return firstNum – half;
+}
+}
+}
+console.log(findOppositeNumber(10, 2))
