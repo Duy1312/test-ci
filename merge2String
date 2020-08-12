@@ -1,0 +1,20 @@
+function merge (str1, str2) {
+
+  var a = str1.split("").filter(Boolean);
+
+  var b = str2.split("");
+
+  var merge2String = '';
+
+
+  for( i = 0; i < a.length || i < b.length; i++) {  
+   if(i < a.length)  {
+     merge2String +=  a[i]}
+   if(i < b.length)  {
+     merge2String +=  b[i]}
+  }
+return merge2String;
+
+}
+console.log(merge('abc','xyz'))
+console.log(merge('abc','xyzt'))
